@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChartJS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .content {
+            display: none;
+        }
+
+        #alertMsg {
+            display: none;
+        }
+
+        .chart {
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container mt-3">
+        <h1 class="text-center text-white">ChartJS Playground</h1>
+        <button class="btn btn-info btn-sm mx-auto" id="addData">Add Data</button>
+        <button class="btn btn-danger btn-sm mx-auto" id="delData">Delete Data</button>
+        <button class="btn btn-warning btn-sm mx-auto" id="randData">Randomize Data</button>
+        <!-- <input type="number" class="form-control mt-1" id="inpData"> -->
+        <!-- <div class="alert alert-danger mt-1" id="alertMsg">
+            <h1>Only 12 data are allowed</h1>
+        </div> -->
+    </div>
+    <div class="container">
+        <div class="chart">
+            <canvas id="myChart" width="500" height="500"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
+        integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
