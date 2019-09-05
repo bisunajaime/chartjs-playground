@@ -2,7 +2,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var barData1, addData, alertMsg, set, inpData, delData, color, months
 barData1 = document.getElementById('barData1');
 addData = document.querySelector('#addData');
-alertMsg = document.getElementById('alertMsg');
+//alertMsg = document.getElementById('alertMsg');
 inpData = document.getElementById('inpData');
 delData = document.getElementById('delData');
 
@@ -65,7 +65,7 @@ addData.addEventListener('click', function () {
         myChart.data.labels.push(months[i++]);
         myChart.update();
     }else{
-        alertMsg.style.display = "block";
+        //alertMsg.style.display = "block";
     }
 });
 
@@ -73,7 +73,7 @@ delData.addEventListener('click', function(){
     if (i > 0) {
         myChart.data.labels.pop();
         myChart.data.datasets[0].data.pop();
-        alertMsg.style.display = "none";
+        //alertMsg.style.display = "none";
         i--;
         myChart.update();
     }
