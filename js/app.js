@@ -73,7 +73,7 @@ delData.addEventListener('click', function(){
     if (i > 0) {
         myChart.data.labels.pop();
         myChart.data.datasets[0].data.pop();
-        //alertMsg.style.display = "none";
+        //alertMsg.style.display = "none"; 
         i--;
         myChart.update();
     }
